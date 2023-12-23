@@ -45,7 +45,9 @@ void highscore::loadHighScores(const std::string& fileName, QTextBrowser* textBr
         std::istringstream iss(line);
         int score;
         iss >> score;
-        textBrowser->append(QString::number(score) + " seconds");
+        if(score!=1000000000){
+            textBrowser->append(QString::number(score) + " seconds");
+        }
     }
 
     file.close();

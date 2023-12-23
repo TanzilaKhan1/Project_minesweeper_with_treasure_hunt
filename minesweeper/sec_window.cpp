@@ -143,7 +143,6 @@ void sec_window::result(){
         // Show a wining message
         QMessageBox::warning(this, "", "BRAVO! You Win!");
         highscore();
-
      }
      timer->stop();
 
