@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>highscore</class>
+ <widget class="QDialog" name="highscore">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{ 
+background-color: 	#b9e3f7 ;
+color: #007dff;
+border-radius: 15px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>330</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ 
+border-radius: 15px;
+border-right: 3px solid #003366;
+border-bottom: 3px solid #003366;
+}
+QPushButton:enabled{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:pressed{
+background-color: #040273;
+color: white;
+}
+QPushButton:hover:!pressed{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:disabled{
+background-color: #87CEEB;
+color: #000000;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>back</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="easyScores">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>111</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="mediumScores">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>110</y>
+     <width>111</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="hardScores">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>110</y>
+     <width>111</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>80</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Baskerville</family>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{ 
+background-color: #FFFFFF;
+color: #007dff;
+border-radius: 15px;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>  Hard Level</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Baskerville</family>
+     <pointsize>30</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{ 
+background-color: #FFFFFF;
+color: #007dff;
+border-radius: 15px;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>  SCOREBOARD</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>80</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Baskerville</family>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{ 
+background-color: #FFFFFF;
+color: #007dff;
+border-radius: 15px;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string> Medium Level</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Baskerville</family>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{ 
+background-color: #FFFFFF;
+color: #007dff;
+border-radius: 15px;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>  Easy Level</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

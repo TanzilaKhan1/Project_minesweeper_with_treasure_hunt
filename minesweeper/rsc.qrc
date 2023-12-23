@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/blocks.bmp</file>
+        <file>res/timenumber.bmp</file>
+    </qresource>
+</RCC>

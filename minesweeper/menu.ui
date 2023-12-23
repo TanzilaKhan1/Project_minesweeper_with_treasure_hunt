@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QDialog" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>488</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{ 
+background-color: 	#b9e3f7 ;
+color: #007dff;
+border-radius: 15px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="newgame_Button">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>150</y>
+     <width>151</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ 
+border-radius: 15px;
+border-right: 3px solid #003366;
+border-bottom: 3px solid #003366;
+}
+QPushButton:enabled{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:pressed{
+background-color: #040273;
+color: white;
+}
+QPushButton:hover:!pressed{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:disabled{
+background-color: #87CEEB;
+color: #000000;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>New Game</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_Button">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>200</y>
+     <width>151</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ 
+border-radius: 15px;
+border-right: 3px solid #003366;
+border-bottom: 3px solid #003366;
+}
+QPushButton:enabled{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:pressed{
+background-color: #040273;
+color: white;
+}
+QPushButton:hover:!pressed{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:disabled{
+background-color: #87CEEB;
+color: #000000;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>High Score</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="About_Button">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>250</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ 
+border-radius: 15px;
+border-right: 3px solid #003366;
+border-bottom: 3px solid #003366;
+}
+QPushButton:enabled{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:pressed{
+background-color: #040273;
+color: white;
+}
+QPushButton:hover:!pressed{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:disabled{
+background-color: #87CEEB;
+color: #000000;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>ABOUT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Quit_Button">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>300</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ 
+border-radius: 15px;
+border-right: 3px solid #003366;
+border-bottom: 3px solid #003366;
+}
+QPushButton:enabled{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:pressed{
+background-color: #040273;
+color: white;
+}
+QPushButton:hover:!pressed{
+background-color: #0059b3;
+color: white;
+}
+QPushButton:disabled{
+background-color: #87CEEB;
+color: #000000;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>QUIT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Back_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{ 
+border-radius: 15px;
+border-right: 1px solid #05014a;
+border-bottom: 1px solid #05014a;
+}
+QPushButton:enabled{
+background-color: #0066cc;
+color: white;
+}
+QPushButton:pressed{
+background-color: #000080;
+color: white;
+}
+QPushButton:hover:!pressed{
+background-color: #0066cc;
+color: white;
+}
+QPushButton:disabled{
+background-color: #87CEEB;
+color: #000000;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>50</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Baskerville</family>
+     <pointsize>30</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{ 
+background-color: #FFFFFF;
+color: #007dff;
+border-radius: 15px;
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>     Menu</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
