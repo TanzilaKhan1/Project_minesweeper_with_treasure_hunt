@@ -35,7 +35,7 @@ void customized::on_Done_Button_clicked()
        accept();}
    if(rows < 3 || columns < 3){
        // Show a warning message
-       QMessageBox::warning(this, "Warning", "Number of rows and columns should be at least 2.");
+       QMessageBox::warning(this, "Warning", "Number of rows and columns should be at least 3.");
    }
    if (mines < rows * columns * 0.12) {
        // Show a warning message

@@ -1,22 +1,22 @@
 #include "about.h"
 #include "ui_about.h" //user interface definition for the about class
 
-about::about(QWidget *parent) : //constructor for the about class
-    QDialog(parent), //QDialog is a class in the Qt framework used to create dialog windows
+about::about(QWidget *parent) :
+    QDialog(parent),
     ui(new Ui::about)
 {
     ui->setupUi(this); // set up the UI components for a dialog or window.
     setWindowTitle("Minesweeper with Treasure Hunt");
 }
 
-void about::on_Back_Button_clicked() //This slot function is triggered when a button with the object name "Back_Button" is clicked. This is likely the "Back" button in the "About" dialog.
+void about::on_Back_Button_clicked() //This slot function is triggered when the button is clicked.
 {
     this->hide();
-    QWidget *parent = this->parentWidget(); //This line gets the parent widget of the "About" dialog, which is likely the main application window.
+    QWidget *parent = this->parentWidget(); //gets the parent widget of the "About" dialog
     parent->show();
 }
 
-about::~about() //destructor, is automatically called when an object of a class is being destroyed
+about::~about()
 {
     delete ui;
 }
