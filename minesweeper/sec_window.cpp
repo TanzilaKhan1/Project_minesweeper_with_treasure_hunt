@@ -149,7 +149,7 @@ void sec_window::result(){
 }
 
 void sec_window::highscore() {
-      string filePath = "/Users/user/Desktop/GitHub/minesweeper";
+      string filePath = "/Users/user/Desktop/GitHub/Project_minesweeper_with_treasure_hunt";
      if (game->gameLevel == EASY) {
         filePath = filePath + "/Easy.txt";
      } else if (game->gameLevel == MEDIUM) {
