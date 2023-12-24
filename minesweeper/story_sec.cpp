@@ -33,18 +33,18 @@ void story_sec::updateTimer()
 {
     if (game->gameState != OVER && game->gameState != WIN)
     {
-        timeLabel->setText("Time: " + QString::number(++game->timerSeconds) + " s");
+        timeLabel->setText("Time: " + QString::number(++game->timerSeconds) + " s"); //updates time per second
     }
 
     if(game->gameState == WIN && game->gameLevel==EASY ){
 
-        GameStart(12,12,30,MEDIUM);
+        GameStart(12,12,30,MEDIUM); //starts the second level
     }
     else if(game->gameState == WIN && game->gameLevel==MEDIUM ){
 
-        GameStart(15,15,50,HARD);
+        GameStart(15,15,50,HARD); //starts the third level
     }
-    else if(game->gameState == WIN && game->gameLevel==HARD ){
+    else if(game->gameState == WIN && game->gameLevel==HARD ){ //winning condition
         result();
         QWidget *swindow = new story(this);
         swindow ->show();
@@ -89,7 +89,7 @@ void story_sec::paintEvent(QPaintEvent *event)
     {
         painter.drawPixmap(posX, spaceY / 2, bmpNumber, n * 20, 0, 20, 28);
     }
-    while(n > 0)
+    while(n > 0) //changes the bomb number in the window when a block is marked with flag
     {
         painter.drawPixmap(posX - 20, spaceY / 2, bmpNumber, n % 10 * 20, 0, 20, 28);
         n /= 10;
@@ -100,7 +100,7 @@ void story_sec::paintEvent(QPaintEvent *event)
     {
         for(int j = 0; j < game->mCol; j++)
         {
-            switch(game->gameMap[i][j].curState)
+            switch(game->gameMap[i][j].curState)// makes the user interface of the game grid
             {
 
             case UN_DIG:
@@ -125,7 +125,7 @@ void story_sec::paintEvent(QPaintEvent *event)
     }
 }
 
-void story_sec::mousePressEvent(QMouseEvent *event)
+void story_sec::mousePressEvent(QMouseEvent *event)// what happens when mouse button is clicked
 {
     if(game->gameState != OVER && game->gameState != WIN)
     {

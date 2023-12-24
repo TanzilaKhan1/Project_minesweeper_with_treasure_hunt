@@ -12,17 +12,17 @@ customized::customized(QWidget *parent) :
 
 int customized::getRows() const
 {
-   return ui->spinRow->value();
+   return ui->spinRow->value();// takes row number from user
 }
 
 int customized::getColumns() const
 {
-   return ui->spinColumn->value();
+   return ui->spinColumn->value();//takes column number from user
 }
 
 int customized::getMines() const
 {
-   return ui->spinMine->value();
+   return ui->spinMine->value();// takes mine number from user
 }
 
 void customized::on_Done_Button_clicked()

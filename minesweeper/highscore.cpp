@@ -14,7 +14,7 @@ highscore::highscore(QWidget *parent) :
          std::string filePath2 = filePath + "/Medium.txt";
 
          std::string filePath3 = filePath + "/Hard.txt";
-
+    //loads the text files
     loadHighScores(filePath1, ui->easyScores);
     loadHighScores(filePath2, ui->mediumScores);
     loadHighScores(filePath3, ui->hardScores);

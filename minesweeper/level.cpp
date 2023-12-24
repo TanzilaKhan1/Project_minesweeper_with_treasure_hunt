@@ -14,7 +14,7 @@ level::level(QWidget *parent) :
     connect(ui->Custom, SIGNAL(triggered()), this, SLOT(showCustomLevelDialog()));
 }
 
-void level::showCustomLevelDialog()
+void level::showCustomLevelDialog()  //shows the dialog box for selecting row, column and mine numbers
 {
     if (!customLevelDialog) {
         customLevelDialog = new customized(this);
@@ -77,9 +77,9 @@ void level::on_Custom_clicked()
     customLevelDialog = new customized(this);
     if (customLevelDialog->exec() == QDialog::Accepted)
     {
-        rows = customLevelDialog->getRows();
-        columns = customLevelDialog->getColumns();
-        mines = customLevelDialog->getMines();
+        rows = customLevelDialog->getRows();  // takes the row number in the range
+        columns = customLevelDialog->getColumns(); // takes the column number in the range
+        mines = customLevelDialog->getMines(); // takes the mine number in the range
         level_s = CUSTOM;
 
     }

@@ -3,4 +3,5 @@
         <file>res/blocks.bmp</file>
         <file>res/timenumber.bmp</file>
     </qresource>
+    <qresource prefix="/sound"/>
 </RCC>

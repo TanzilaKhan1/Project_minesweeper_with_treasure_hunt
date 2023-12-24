@@ -45,14 +45,14 @@ void sec_window::updateTimer()
     }
     if (game->gameState != OVER && game->gameState != WIN)
     {
-        timeLabel->setText("Time: " + QString::number(++game->timerSeconds) + " s");
+        timeLabel->setText("Time: " + QString::number(++game->timerSeconds) + " s");//updates the time per second
     }
 }
 
 void sec_window::Timer(){
     setFixedSize(game->mCol * blockSize  + offsetX * 2, game->mRow * blockSize + offsetY * 2 + spaceY);
     timeLabel->setGeometry(game->mCol * blockSize + offsetX * 2 - 80, spaceY / 2, 80, 20);
-    timeLabel->setText("Time: " + QString::number(game->timerSeconds) + " s");
+    timeLabel->setText("Time: " + QString::number(game->timerSeconds) + " s"); // shows time in the window
     timer->start(1000);
 }
 
@@ -68,7 +68,7 @@ void sec_window::paintEvent(QPaintEvent *event)
     {
         painter.drawPixmap(posX, spaceY / 2, bmpNumber, n * 20, 0, 20, 28);
     }
-    while(n > 0)
+    while(n > 0)    //changes the bomb number in the window when a block is marked with flag
     {
         painter.drawPixmap(posX - 20, spaceY / 2, bmpNumber, n % 10 * 20, 0, 20, 28);
         n /= 10;
@@ -79,7 +79,7 @@ void sec_window::paintEvent(QPaintEvent *event)
     {
         for(int j = 0; j < game->mCol; j++)
         {
-           switch(game->gameMap[i][j].curState)
+           switch(game->gameMap[i][j].curState) // makes the user interface of the game grid
            {
 
              case UN_DIG:
@@ -104,7 +104,7 @@ void sec_window::paintEvent(QPaintEvent *event)
     }
 }
 
-void sec_window::mousePressEvent(QMouseEvent *event)
+void sec_window::mousePressEvent(QMouseEvent *event)// what happens when mouse button is clicked
 {
     if(game->gameState != OVER && game->gameState != WIN)
     {
