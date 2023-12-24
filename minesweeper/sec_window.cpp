@@ -40,19 +40,20 @@ sec_window::sec_window(int rows, int columns, int mines, GameLevel level_s, QWid
 
 void sec_window::updateTimer()
 {
-    if(game->gameState==WIN){
-        highscore();
-    }
+
     if (game->gameState != OVER && game->gameState != WIN)
     {
-        timeLabel->setText("Time: " + QString::number(++game->timerSeconds) + " s");//updates the time per second
+        timeLabel->setText("Time: " + QString::number(++game->timerSeconds) + " s"); //updates time per second
+    }
+    if(game->gameState==WIN){
+        highscore();
     }
 }
 
 void sec_window::Timer(){
     setFixedSize(game->mCol * blockSize  + offsetX * 2, game->mRow * blockSize + offsetY * 2 + spaceY);
     timeLabel->setGeometry(game->mCol * blockSize + offsetX * 2 - 80, spaceY / 2, 80, 20);
-    timeLabel->setText("Time: " + QString::number(game->timerSeconds) + " s"); // shows time in the window
+    timeLabel->setText("Time: " + QString::number(game->timerSeconds) + " s");
     timer->start(1000);
 }
 
@@ -143,8 +144,8 @@ void sec_window::result(){
         // Show a wining message
         QMessageBox::warning(this, "", "BRAVO! You Win!");
         highscore();
+        timer->stop();
      }
-     timer->stop();
 
 }
 
