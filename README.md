@@ -62,9 +62,27 @@ This game encourages:
 - Spatial awareness  
 - Problem-solving  
 
+## Credits
+
+This project was developed collaboratively by:
+
+- [**Tanzila Khan**] : Designed and implemented the core game engine (`game_model`), high score functionality, and custom level configuration system.
+- [**Taif Ahmed Turjo**] : Developed key gameplay interfaces including the main game screen, resource integration, and story mode functionality.
+- [**Amio Rashid**] : Created and interconnected all primary UI windows, including main menu, level selection, and about sections; authored `main.cpp` and handled application flow.
+
+GUI and functionality powered by the Qt Framework.
+
+
+## Contributors
+
+[![Tanzila Khan](https://img.shields.io/badge/GitHub-TanzilaKhan1-blue?logo=github)](https://github.com/TanzilaKhan1)
+[![Taif Ahmed Turjo](https://img.shields.io/badge/GitHub-taifONduty-blue?logo=github)](https://github.com/taifONduty)
+[![Amio Rashid](https://img.shields.io/badge/GitHub-Flamy--A-blue?logo=github)](https://github.com/Flamy-A)
+
+
 ## License
 
-This project is for educational and recreational purposes. You may adapt it under an open-source license of your choice.
+This project is for educational and recreational purposes combining classic Minesweeper logic with an engaging treasure-hunt experience. You may adapt it under an open-source license of your choice.
 
 ---
 
