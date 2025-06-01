@@ -66,3 +66,6 @@ This game encourages:
 
 This project is for educational and recreational purposes. You may adapt it under an open-source license of your choice.
 
+---
+
+Enjoy the challenge of Minesweeper, now with a treasure-hunting twist!
