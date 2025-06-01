@@ -46,11 +46,23 @@ Progress through Easy → Medium → Hard levels in a continuous journey. Fail a
 ## How to Run
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/TanzilaKhan1/Project_minesweeper_with_treasure_hunt.git
+   git clone https://github.com/yourusername/Project_minesweeper_with_treasure_hunt.git
+
 2. Open the project in Qt Creator or build using qmake and make:
-   ```bash
-   qmake
-   make
+   qmake  
+   make  
    ./minesweeper
-  
+
+## Educational Value
+
+This game encourages:
+
+- Logical reasoning  
+- Pattern recognition  
+- Spatial awareness  
+- Problem-solving  
+
+## License
+
+This project is for educational and recreational purposes. You may adapt it under an open-source license of your choice.
+
