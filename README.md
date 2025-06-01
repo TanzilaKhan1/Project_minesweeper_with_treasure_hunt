@@ -66,18 +66,37 @@ This game encourages:
 
 This project was developed collaboratively by:
 
-- [**Tanzila Khan**] : Designed and implemented the core game engine (`game_model`), high score functionality, and custom level configuration system.
-- [**Taif Ahmed Turjo**] : Developed key gameplay interfaces including the main game screen, resource integration, and story mode functionality.
-- [**Amio Rashid**] : Created and interconnected all primary UI windows, including main menu, level selection, and about sections; authored `main.cpp` and handled application flow.
+- [**Tanzila Khan**](https://github.com/TanzilaKhan1) : Designed and implemented the core game engine (`game_model`), high score functionality, and custom level configuration system.
+- [**Taif Ahmed Turjo**](https://github.com/taifONduty) : Developed key gameplay interfaces including the main game screen, resource integration, and story mode functionality.
+- [**Amio Rashid**](https://github.com/Flamy-A) : Created and interconnected all primary UI windows, including main menu, level selection, and about sections; authored `main.cpp` and handled application flow.
 
 GUI and functionality powered by the Qt Framework.
 
 
 ## Contributors
 
-[![Tanzila Khan](https://img.shields.io/badge/GitHub-TanzilaKhan1-blue?logo=github)](https://github.com/TanzilaKhan1)
-[![Taif Ahmed Turjo](https://img.shields.io/badge/GitHub-taifONduty-blue?logo=github)](https://github.com/taifONduty)
-[![Amio Rashid](https://img.shields.io/badge/GitHub-Flamy--A-blue?logo=github)](https://github.com/Flamy-A)
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/TanzilaKhan1">
+        <img src="https://github.com/TanzilaKhan1.png" width="100px;" alt="Tanzila Khan"/><br />
+        <sub><b>Tanzila Khan</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/taifONduty">
+        <img src="https://github.com/taifONduty.png" width="100px;" alt="Taif Ahmed Turjo"/><br />
+        <sub><b>Taif Ahmed Turjo</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Flamy-A">
+        <img src="https://github.com/Flamy-A.png" width="100px;" alt="Amio Rashid"/><br />
+        <sub><b>Amio Rashid</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 ## License
